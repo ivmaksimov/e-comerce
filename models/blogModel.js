@@ -39,15 +39,12 @@ var blogSchema = new mongoose.Schema(
         ref: "User",
       },
     ],
-    image: {
-      type: String,
-      default:
-        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fblog&psig=AOvVaw192St6zdqGYC6qJYVtg9Gn&ust=1676468515021000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCKCR8oOSlf0CFQAAAAAdAAAAABAE",
-    },
+
     author: {
       type: String,
       default: "Admin",
     },
+    images: [],
   },
   {
     toJSON: {
